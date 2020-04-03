@@ -1,8 +1,8 @@
 # Setup Docker Registry on minikube
 
-## 1. Create a regsitry on minikube 
+## 1. Create the docker-registry on minikube 
 
-```kubectl create -f kube-registry.yaml``
+``kubectl create -f kube-registry.yaml``
 
 Check the response of the installed docker registry:
 
@@ -12,8 +12,10 @@ Check the response of the installed docker registry:
 
 ## 2. Map the port 5000 to minikube registry pod
 
-```kubectl port-forward --namespace kube-system $(kubectl get po -n kube-sy
-stem | grep kube-registry-v0 | \awk '{print $1;}') 5000:5000 ```
+<code>
+kubectl port-forward --namespace kube-system $(kubectl get po -n kube-sy
+stem | grep kube-registry-v0 | \awk '{print $1;}') 5000:5000
+</code>
 
 
 ## Resources
