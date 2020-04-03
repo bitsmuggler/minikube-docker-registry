@@ -22,7 +22,7 @@ kubectl port-forward --namespace kube-system $(kubectl get po -n kube-sy
 stem | grep kube-registry-v0 | \awk '{print $1;}') 5000:5000
 </code>
 
-### 4. Build, tag and push your docker image
+### 4. Build, tag and push your docker image to the local registry
 
 1. Build:  ```docker build -t techtopics/notesapp .```   
 1. Tag: ```docker tag techtopics/notesapp:latest registry.me:5000/notesapp:0.0.1```
