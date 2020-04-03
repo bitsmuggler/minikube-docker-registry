@@ -1,4 +1,4 @@
-# Setup Docker Registry on minikube
+# Setup Docker registry on minikube
 
 ### 1. Modify your /etc/hosts entry for reaching your local registry
 
