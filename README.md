@@ -28,7 +28,7 @@ stem | grep kube-registry-v0 | \awk '{print $1;}') 5000:5000
 1. Tag: ```docker tag techtopics/notesapp:latest registry.me:5000/notesapp:0.0.1```
 1. Push: ```docker push registry.me/notesapp:0.0.1```
 
-## Resources
+### Resources
 
 * [kube-registry.yaml on git](https://gist.github.com/coco98/b750b3debc6d517308596c248daf3bb1)
 * [Sharing a local registry with minikube](https://hasura.io/blog/sharing-a-local-registry-for-minikube-37c7240d0615/)
